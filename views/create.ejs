@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="create.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="icon.css">
+    <script src="createScript.js" defer></script>
 </head>
 
 <body>
@@ -33,7 +34,7 @@
                         <label class="upload-container" for="recipe_image">
                             <i class="fa-solid fa-upload"></i>
                             <p class="upload-text">Drag and Drop or <span>Upload Photo</span> </p>
-                            <p class="uploade-file-name"></p>
+                            <p class="uploaded-file-name"></p>
                         </label>
                         <input type="file" name="recipe_image" id="recipe_image">
                     </div>
@@ -64,14 +65,31 @@
                         <p class="create-category-button">+ create new category</p>
                     </div>
 
-                    <div class="nested-form-container">
-                        <form id="create-category-form">
-                            <input placeholder="New Category" type="text" id="category_name"
-                                form="create-category-form">
-                            <label for="new_category_image">upload</label>
-                            <input form="create-category-form" type="file" id="new_category_image"
-                                name="new_category_image">
-                        </form>
+                    <div class="new-category-container">
+                        <label for="category_name" class="input-label">New Category</label>
+                        <input placeholder="Category" type="text" id="category_name" form="create-category-form">
+                        <button class="create-category-commit" type>create</button>
+                    </div>
+
+                    <div class="ingredient-container">
+                        <p class="input-label">Ingredient</p>
+                        <div class="add-ingredient-wrapper">
+                            <input type="text" id="ingredient_name">
+                            <button type="button" class="add-new-ingredient">+Add Ingredient</button>
+                        </div>
+                        <ol>
+                            <template id="single-ingredient-templte">
+                                <div class="single-ingredient-wrapper">
+                                    <li class="single-ingredient">
+                                        <span class="order"></span>
+                                        <input readonly type="text" name="ingredients[]">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </li>
+                                    <hr>
+                                </div>
+                            </template>
+                        </ol>
+
                     </div>
 
                 </form>
