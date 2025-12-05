@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="time.css">
+    <link rel="stylesheet" href="icon.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="header">
+                <h1 class="logo">Recipe<span class="logo-second-half">Hub</span></h1>
+                <a href="" class="headerPage">Home</a>
+                <a href="" class="headerPage">Categories</a>
+                <a href="" class="headerPage">Add Recipe</a>
+                <div class="search-wrapper">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="search" name="search" type="text" placeholder="Search Recipes">
+                </div>
+
+                <%- include('partials/icon.ejs') %>
+                    <div class="burger-wrapper">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section>
+
+
+        <div class="wrapper">
+            <h1 class="section-title">Trendy Recipes</h1>
+            <div class="recipes-grid">
+
+                <div class="recipe-card">
+
+                    <img class='recipe-image'
+                        src="https://www.recipetineats.com/tachyon/2023/10/Penne-Arrabbiata-4.jpg?resize=500%2C500"
+                        alt="">
+                    <p class="recipe-name"> Creamy Tomato Pasta</p>
+                    <div class="recipe-info">
+                        <%- include('partials/time.ejs') -%>
+                            <%- include('partials/icon.ejs') %>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
+</body>
+
+</html>

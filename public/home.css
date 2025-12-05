@@ -1,0 +1,141 @@
+* {
+    color: #3C221A;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-beige: #FBE8C9;
+    --dark-beige: #F3C596;
+}
+
+.wrapper {
+    margin: auto;
+    width: min(1280px, 98%);
+    /* margin-bottom: 100px; */
+}
+
+header {
+    background-color: var(--light-beige);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px 0px;
+}
+
+.search {
+    height: 35px;
+    min-width: 100px;
+    flex-basis: 250px;
+    flex-shrink: 10;
+    border: 1px solid #dfb4a7;
+    border-radius: 6px;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+.logo-second-half {
+    color: #D3692B;
+}
+
+.header a {
+    white-space: nowrap;
+    font-size: 1.2rem;
+}
+
+.search-wrapper {
+    position: relative;
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3c221aa4;
+}
+
+.burger-wrapper {
+    display: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+@media screen and (width<750px) {
+
+    .header a,
+    .search-wrapper {
+        display: none;
+    }
+
+    .burger-wrapper {
+        display: block;
+    }
+
+    .header {
+        padding: 8px;
+    }
+
+    .user-wrapper {
+        margin-left: auto;
+        margin-right: 15px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* -------------------------------- end of header styles */
+
+.section-title {
+    padding: 30px 0;
+}
+
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 30px;
+}
+
+.recipe-card {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    gap: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 10px 15px 25px var(--light-beige);
+    padding-bottom: 15px;
+}
+
+.recipe-image {
+    width: 300px;
+    object-fit: contain;
+}
+
+.recipe-info .user-wrapper {
+    width: 35px;
+    height: 35px;
+}
+
+.recipe-info .fa-user {
+    font-size: 20px;
+}
+
+.recipe-info {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 8px;
+}
+
+.recipe-name {
+    font-size: 1.8rem;
+    padding: 10px 8px;
+}

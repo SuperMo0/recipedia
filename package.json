@@ -1,0 +1,26 @@
+{
+  "name": "recipedia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon --ext js,ejs --ignore public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuperMo0/recipedia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SuperMo0/recipedia/issues"
+  },
+  "homepage": "https://github.com/SuperMo0/recipedia#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.1.0",
+    "ejs": "^3.1.10",
+    "express": "^5.2.1"
+  }
+}
