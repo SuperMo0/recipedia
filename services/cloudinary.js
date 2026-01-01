@@ -32,7 +32,6 @@ async function uploadImageBuffer(image) {
     }
 }
 
-
 async function getRecipeBanner(image) {
     try {
         let url = await cloudinary.url(image, { quality: 'auto', gravity: "auto", height: 300, width: 1280, crop: "fill" })

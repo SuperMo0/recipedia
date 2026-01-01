@@ -1,15 +1,16 @@
 
 const queries = require('./../db/queries');
 const cloudinary = require('./../services/cloudinary');
+
 async function renderHome(req, res) {
-
-    console.log(req);
-
     try {
         let recipes = await queries.getRecipes();
+
         res.render('home.ejs', { recipes, pag: 'home' });
     }
     catch (e) {
+        console.log(e);
+
         res.render('error', { error: "we are having a problem right now please try again later" });
     }
 

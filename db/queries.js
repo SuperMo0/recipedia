@@ -22,6 +22,8 @@ async function getRecipes() {
         return result.rows;
     }
     catch (e) {
+        console.log(e);
+
         throw ('Error Fetching recipes from the database');
     }
 }
