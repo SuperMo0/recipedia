@@ -1,6 +1,6 @@
-# 🍳 Recipedia
+# 🍳 Recipe Hub
 
-**Recipedia** is a dynamic recipe web application that allows users to discover, share, and manage their favorite recipes. Built with a focus on clean UI/UX and performance, it features image uploads, categorization, and a custom recipe creation interface.
+** Recipe Hub** is a  recipe web application Built as part of my Full stack learning journey 
 
 ## 🚀 Tech Stack
 
@@ -19,7 +19,6 @@
 
 ## ✨ Key Features
 
-
 * **Browse Recipes:** View a collection of recipes with dynamic routing.
 * **Recipe Creation:** A dedicated "Add Recipe" interface with:
     * Image drag-and-drop upload.
@@ -27,13 +26,3 @@
     * Category selection.
 * **Image Optimization:** Automatic image resizing, cropping, and formatting via Cloudinary.
 * **Responsive Design:** Optimized for both desktop and mobile viewing.
-
-## 🛠️ Installation & Setup
-
-Follow these steps to run the project locally.
-
-### 1. Clone the repository
-
-```bash
-git clone [https://github.com/your-username/recipedia.git](https://github.com/your-username/recipedia.git)
-cd recipedia
